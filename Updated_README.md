@@ -20,7 +20,7 @@ The model is designed to optimize courier assignments based on environmental imp
 ### Memory and CPU Requirements
 
 - **Single Courier Training**: 600 MB of RAM is required per model.
-- **Multiprocessing**: The model processes data per day. For 8 days, 4.8 GB of RAM is recommended.
+- **Multiprocessing**: The model processes data per day for the available dates in the data. For 8 days, 4.8 GB of RAM is recommended.
 - **CPU**: 8 GB of CPU is recommended for running both models in parallel for 8 days of data.
 
 ### Training Time
@@ -33,7 +33,7 @@ Training both models for 100,000 orders and 20,000 couriers with an average of 4
 > The current code is optimized to train with 100 orders and around 20,000 couriers for faster execution during tests.
 
 ## Installation
-
+You can try it below, I think it will work, but it takes so long time for the model to work. Therefore, I advise you to try it in Jupyter Notebooks with less data. 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/environmentally-friendly-courier-model.git
